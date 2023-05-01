@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
    <!-- Required meta tags -->
    <meta charset="utf-8">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="col-lg-8">
-            <form class="p-lg-5 col-12 row g-3" action="" method="POST">
+            <form class="p-lg-5 col-12 row g-3" action="./controller/registro.controller.php" method="POST">
                 <div>
                     <h1>INSCRIPCIONES</h1>
                     <h2>Jornada de Capacitacion en Archivo</h2>
@@ -35,54 +35,53 @@
                 </div>
                     <div class="col-lg-6">
                         <label for="userName" class="form-label">Nombre(s)</label>
-                        <input type="text" name="nombre" class="form-control" placeholder="Nombres" id="userName"
-                            aria-describedby="emailHelp">
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombres" id="userName" aria-describedby="emailHelp" required>
                     </div>
 
                         <div class="col-lg-6">
                             <label for="userName" class="form-label">Apellidos</label>
-                            <input type="text" name="apellido" class="form-control" placeholder="apellidos" id="lastname"
-                            aria-describedby="emailHelp"> 
+                            <input type="text" name="apellidos" class="form-control" placeholder="apellidos" id="lastname"
+                            aria-describedby="emailHelp" required>
                         </div>
 
                         <div class="col-lg-6">
                             <label for="userName" class="form-label">DNI</label>
                             <input type="text" name="dni" class="form-control" placeholder="00000000" id="dni"
-                            aria-describedby="emailHelp"> 
+                            aria-describedby="emailHelp" required>
                         </div>
 
                         <div class="col-lg-6">
                             <label for="userName" class="form-label">Institucion</label>
                             <input type="text" name="institucion" class="form-control" placeholder="Nombre de la Institucion que labora" id="institucion"
-                            aria-describedby="emailHelp">
+                            aria-describedby="emailHelp" required>
                         </div>
 
                         <div class="col-lg-6">
-                            <label for="userName" class="form-label">Provincia</label>
-                            <input type="text" name="provincia" class="form-control" placeholder="Puno" id="provincia"
-                            aria-describedby="emailHelp"> 
+                            <label for="userName" class="form-label">Correo Electronico</label>
+                            <input type="email" name="email" class="form-control" placeholder="usuario@local.com" id="email"
+                            aria-describedby="emailHelp" required>
                         </div>
 
                         <div class="col-lg-6">
                             <label for="userName" class="form-label">Distrito</label>
                             <input type="text" name="distrito" class="form-control" placeholder="Puno" id="distrito"
-                                aria-describedby="emailHelp">
+                                aria-describedby="emailHelp" required>
                         </div>
 
                         <div class="col-lg-6">
                             <label for="userName" class="form-label">Contraseña</label>
-                            <input type="password" name="contraseña" class="form-control" placeholder="Contraseña" id="password"
-                                aria-describedby="emailHelp">
+                            <input type="password" name="pass1" class="form-control" placeholder="Contraseña" id="password"
+                                aria-describedby="emailHelp" required>
                         </div>
 
                         <div class="col-lg-6">
                             <label for="userName" class="form-label">Repita la Contraseña</label>
-                            <input type="password" name="contraseña1" class="form-control" placeholder="escriba nuevamente su contraseña" id=""
-                            aria-describedby="emailHelp">
+                            <input type="password" name="pass2" class="form-control" placeholder="escriba nuevamente su contraseña" id=""
+                            aria-describedby="emailHelp" required>
                         </div>
 
                         <div class="col-12">
-                            <button type="submit" class="btn btn-brand">Enviar Inscripcion</button>
+                            <button type="submit" name="btnGuardar" class="btn btn-brand">Enviar Inscripcion</button>
                         </div>
 
             </form>
